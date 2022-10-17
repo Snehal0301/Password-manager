@@ -1,0 +1,43 @@
+.signInBox {
+    width: 333px;
+    margin: 73px 93px 21px 78px;
+}
+
+.signInBox h1 {
+    text-align: center;
+    color: var(--font-white-color);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.67px;
+    margin-bottom: 36px;
+}
+
+.passwordInputBox {
+    position: relative;
+}
+
+.passwordInputBox img{
+    cursor: pointer;
+}
+
+.togglePassword {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+}
+
+.forgotPass {
+    text-align: right;
+    color: var(--font-white-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.signUp {
+    height: 19px;
+    width: 205px;
+    color: var(--font-white-color);
+    font-family: "Open Sans";
+    font-size: 14px;
+    margin-top: 58px;
+}

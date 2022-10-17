@@ -1,4 +1,15 @@
+:root{
+  --font-white-color:#FFFFFF;
+  --border-white-color:#f5f7fb38;
+  --font-blue-color:#0E85FF;
+  --linear-gradient:linear-gradient(180deg, #20BBFF 0%, #0E85FF 100%);
+  --border-color:rgba(208, 208, 208, 0.5)
+}
+
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }

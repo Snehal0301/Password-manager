@@ -1,9 +1,11 @@
-import React from 'react'
+import Login from './views/login/Login'
+import './App.css'
+import './index.css'
 
 const App = () => {
   return (
-    <div>
-      App
+    <div className='app'>
+      <Login />
     </div>
   )
 }
