@@ -1,0 +1,21 @@
+.toast {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    height: 44px;
+    width: 513px;
+    border: 1px solid #97E6B8;
+    border-radius: 2px;
+    background-color: #CBF3DC;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.toast p{
+    color: #2ECC71;
+    font-size: 14px;
+}
+.toast i{
+    color: #2ECC71;
+}

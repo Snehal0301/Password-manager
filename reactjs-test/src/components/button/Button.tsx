@@ -1,8 +1,8 @@
 import './Button.css'
-const Button = () => {
+const Button = (props:any) => {
     return (
         <>
-            <button className='signInBtn'>SIGN IN</button>
+            <button className={props.class_name}>{props.text}</button>
         </>
     )
 }

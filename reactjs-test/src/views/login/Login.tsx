@@ -10,7 +10,7 @@ const Login = () => {
                     password in your business </h2>
             </div>
             <div className="signInContent">
-                <Form />
+                <Form type="signin"/>
             </div>
         </div>
     )

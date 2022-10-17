@@ -1,15 +1,19 @@
-.signInBox {
+.FormBox {
     width: 333px;
     margin: 73px 93px 21px 78px;
 }
 
-.signInBox h1 {
+.FormBox h1 {
     text-align: center;
     color: var(--font-white-color);
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 1.67px;
     margin-bottom: 36px;
+}
+
+.FormBox .signupTitle{
+    text-align: left;
 }
 
 .passwordInputBox {
@@ -40,4 +44,8 @@
     font-family: "Open Sans";
     font-size: 14px;
     margin-top: 58px;
+}
+
+.signupBtn{
+    margin-top: 16px;
 }

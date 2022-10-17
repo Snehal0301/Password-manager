@@ -3,7 +3,7 @@ import './Input.css';
 const Input = (props: any) => {
     return (
         <>
-            <input type="text" className='passwordInput' placeholder={props.placeholder} />
+            <input type={props.type} className='passwordInput' placeholder={props.placeholder} />
         </>
     )
 }

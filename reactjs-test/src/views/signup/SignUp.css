@@ -1,10 +1,11 @@
 .login {
     background: var(--linear-gradient);
     display: flex;
+    justify-content: center;
     border-radius: 15px;
 }
 
-.signInLogo {
+.signUpLogo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,12 +14,12 @@
     border-right: 1px solid var(--border-white-color);
 }
 
-.signInLogo img {
+.signUpLogo img {
     width: 176px;
     margin: 94px 77px 34px 81px;
 }
 
-.signInLogo h2 {
+.signUpLogo h2 {
     width: 17rem;
     text-align: center;
     font-size: 1.25rem;
@@ -27,11 +28,10 @@
     margin: 0 25px 99px 28px;
 }
 
-/* ------------signinContent----------------- */
+/* ------------signUpContent----------------- */
 
-.signInContent {
+.signUpContent {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-

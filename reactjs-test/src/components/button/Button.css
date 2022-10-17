@@ -11,3 +11,17 @@
     border: none;
     cursor: pointer;
 }
+
+.signUpBtn {
+    height: 44px;
+    width: 130px;
+    margin-top: 36px;
+    border-radius: 4px;
+    background-color: var(--font-white-color);
+    color: var(--font-blue-color);
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
