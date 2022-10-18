@@ -1,0 +1,55 @@
+.sidebar {
+    height: 100%;
+    width: 120px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    background-color: var(--sidebar-background-color);
+}
+
+.sidebar #burgerIcon {
+    width: 40px;
+    height: 22px;
+    display: block;
+    margin-bottom: 104px;
+    color: var(--font-white-color);
+    cursor: pointer;
+}
+
+.sidebar .home {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.home #left-line {
+    position: absolute;
+    left: 0;
+    height: 80px;
+    width: 5px;
+    border-radius: 3px;
+    background-color: var(--line-color);
+}
+
+.sidebar .homeIcon {
+    width: 40px;
+    margin: 15px 0 104px 0;
+    color: var(--font-white-color);
+    cursor: pointer;
+}
+
+.sidebar #circle {
+    position: absolute;
+    right: -8px;
+    top: 30px;
+    height: 17px;
+    width: 17px;
+    background-color: var(--line-color);
+    border-radius: 50%;
+}

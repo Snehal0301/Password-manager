@@ -4,7 +4,7 @@
     position: relative;
 }
 
-.sidebar {
+/* .sidebar {
     height: 100%;
     width: 120px;
     position: absolute;
@@ -58,10 +58,10 @@
     width: 17px;
     background-color: var(--line-color);
     border-radius: 50%;
-}
+} */
 
 /* navigation */
-.header {
+/* .header {
     width: 100%;
     position: absolute;
     top: 0;
@@ -77,27 +77,33 @@
     margin-left: 109px;
 }
 
-.logo {
+.nav-logo {
     position: relative;
     margin-left: 109px;
 }
 
-.options {
-    margin-right: 100px;
-}
+
 
 .options img {
     cursor: pointer;
-}
+} */
 
 /* container main */
 
 .container {
     width: calc(100% - 120px);
-    min-height: 86vh;
+    height: 86vh;
+    /* min-height: 86vh; */
     position: absolute;
     top: 135px;
     left: 120px;
+    background-color: var(--dashboard-container-color);
+    overflow: auto;
+}
+
+.container-elements {
+    /* background-color: red; */
+    margin: 0 91px;
 }
 
 .container-nav {
@@ -147,13 +153,51 @@
     right: 5px;
 }
 
+/* dropdown */
+.dropbtn {
+    color: var(--font-black-color);
+    margin-top: 37px;
+    /* padding: 16px; */
+    font-size: 16px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dropbtn p {
+    font-size: 24px;
+}
+
+.dropbtn img {
+    width: 14px;
+    height: 8px;
+}
+
+.dropbtn .number {
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--font-blue-color);
+}
+
+.dropbtn .number p {
+    font-size: 20px;
+    text-align: center;
+    color: var(--font-white-color);
+}
+
 /* container content */
 
 .container-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 76.9vh;
+    min-height: 67.8vh;
 }
 
 .container-add-files {
@@ -166,15 +210,133 @@
     width: 819px;
 }
 
-.addfile{
+.addfile {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.addfile p{
+.addfile p {
     font-size: 26px;
     width: 367px;
     text-align: center;
     color: var(--font-black-color);
+}
+
+/* site elements */
+
+.site-elements {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin-top: 45px;
+    overflow: auto;
+}
+
+/*
+.site-element {
+    display: flex;
+    flex-direction: column;
+    height: 115px;
+    width: 363px;
+    border-radius: 14px;
+    background-color: var(--font-white-color);
+    box-shadow: 0 8px 18px 10px rgba(0, 0, 0, 0.02);
+    padding: 15px;
+}
+
+.site-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-img {
+    height: 50px;
+    width: 50px;
+}
+
+.site-name {
+    height: 27px;
+    width: 93px;
+    color: var(--font-blue-color);
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 27px;
+}
+
+.site-details .copy-password {
+    display: flex;
+    margin-left: -10px;
+    margin-top: 6px;
+}
+
+.site-details .copy-password p {
+    height: 17px;
+    width: 90px;
+    color: var(--input-border-bot-color);
+    font-size: 12.6px;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+
+.site-link{
+    margin-top: 13px;
+    text-align: center;
+}
+
+.site-link p{
+    font-size: 16px;
+    color: var(--font-black-color);
+} */
+
+
+/* Modal */
+
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal,
+.overlay {
+    width: 70vw;
+    height: 100vh;
+    top: 14%;
+    right: 12%;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49, 49, 49, 0.8);
+}
+
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
 }
