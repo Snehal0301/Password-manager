@@ -1,21 +1,21 @@
-.toast {
+.toast-success {
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
     height: 44px;
     width: 513px;
-    border: 1px solid #97E6B8;
+    border: 1px solid var(--success-border-color);
     border-radius: 2px;
-    background-color: #CBF3DC;
+    background-color: var(--success-background-color);
     padding: 15px;
     margin-bottom: 25px;
 }
 
-.toast p{
-    color: #2ECC71;
+.toast-success p{
+    color: var(--success-text-color);
     font-size: 14px;
 }
-.toast i{
-    color: #2ECC71;
+.toast-success i{
+    color: var(--success-text-color);
 }

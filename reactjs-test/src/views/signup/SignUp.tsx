@@ -1,11 +1,8 @@
 import Form from '../../components/form/Form'
-import Toast from '../../components/toast/Toast'
 import './SignUp.css'
 const SignUp = () => {
     return (
         <>
-
-            <Toast />
             <div className='login'>
                 <div className="signUpLogo">
                     <img src={require("../../assets/images/logo.png")} alt="Logo" />

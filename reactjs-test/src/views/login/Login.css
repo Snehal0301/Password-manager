@@ -2,6 +2,7 @@
     background: var(--linear-gradient);
     display: flex;
     border-radius: 15px;
+    margin: 205px 309px 338px 292px;;
 }
 
 .signInLogo {
