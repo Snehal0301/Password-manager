@@ -25,7 +25,6 @@ const Modal = (props: any) => {
   }
 
   const resetForm = () => {
-    console.log('reset form triggered');
     setUser({ ...user, url: "", siteName: "", sector: "", username: "", sitepass: "", notes: "" })
   }
 

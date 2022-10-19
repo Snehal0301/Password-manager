@@ -12,7 +12,7 @@ const Card = (props: any) => {
         <>
             <div className="site-element" onClick={() => setEditModal(true)}>
                 <div className="site-title">
-                    <img src={require('../../assets/images/facebook.png')} alt="" className='site-img' />
+                    <img src={require(`../../assets/images/facebook.png`)} alt="" className='site-img' />
                     <div className="site-details">
                         <p className='site-name'>{props.element.site}</p>
                         <div className='copy-password'>
