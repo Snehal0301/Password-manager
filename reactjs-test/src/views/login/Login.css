@@ -2,7 +2,7 @@
     background: var(--linear-gradient);
     display: flex;
     border-radius: 15px;
-    margin: 205px 309px 338px 292px;;
+    /* margin: 205px 309px 338px 292px; */
 }
 
 .signInLogo {
@@ -14,7 +14,7 @@
     border-right: 1px solid var(--border-white-color);
 }
 
-.signInLogo img {
+.signInLogo .desktop-logo {
     width: 176px;
     margin: 94px 77px 34px 81px;
 }
@@ -28,6 +28,14 @@
     margin: 0 25px 99px 28px;
 }
 
+.signInLogo .mobile_logo {
+    display: none;
+}
+
+.all-tabs {
+    display: none;
+}
+
 /* ------------signinContent----------------- */
 
 .signInContent {
@@ -36,3 +44,28 @@
     flex-direction: column;
 }
 
+
+/* -----------------Media queries-------------- */
+
+@media screen and (max-width:900px) {
+    .login {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .signInLogo {
+        justify-content: normal;
+        flex-basis: 0;
+    }
+
+    .signinLogo-header {
+        display: none;
+    }
+
+    .signInLogo .mobile_logo {
+
+        display: block;
+    }
+
+
+}

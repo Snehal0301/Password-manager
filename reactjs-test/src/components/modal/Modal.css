@@ -11,11 +11,10 @@ body.active-modal {
 
 .modal,
 .overlay {
-    width: 100vw;
+    width: 70vw;
     height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 14%;
+    right: 12%;
     bottom: 0;
     position: fixed;
 }
@@ -30,16 +29,139 @@ body.active-modal {
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 1.4;
-    background: #f1f1f1;
-    padding: 14px 28px;
-    border-radius: 3px;
-    max-width: 600px;
-    min-width: 300px;
+    background: var(--font-white-color);
+    padding: 30px;
+    box-sizing: border-box;
+    height: 598px;
+    width: 58%;
+    border: 1px solid var(--modal-border-color);
+    border-radius: 10px;
+    background-color: var(--font-white-color);
+}
+
+.modal-content p {
+    height: 41px;
+    /* width: 119px; */
+    color: var(--font-black-color);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.modal-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-title .submitBtn {
+    height: 45px;
+    width: 80px;
+    border-radius: 4px;
+    background-color: #0E85FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.url-input {
+    width: 100%;
+    margin-top: 26px;
+}
+
+.url-input label {
+    display: block;
+    height: 24px;
+    width: 34px;
+    color: var(--label-color);
+    font-family: "Open Sans";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.url-input input {
+    display: block;
+    width: 97%;
+    box-sizing: border-box;
+    height: 36px;
+    border: 1px solid var(--dashboard-nav-back-color);
+    border-radius: 4px;
+    background-color: var(--dashboard-nav-back-color);
+    outline: none;
+    padding: 15px;
+}
+
+.url-input textarea {
+    display: block;
+    box-sizing: border-box;
+    height: 71px;
+    width: 98%;
+    border: 1px solid var(--dashboard-nav-back-color);
+    border-radius: 4px;
+    background-color: var(--dashboard-nav-back-color);
+    outline: none;
+    padding: 15px;
+}
+
+.input-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+    margin-top: 26px;
+}
+
+.input-sections label {
+    height: 24px;
+    width: 86px;
+    color: var(--label-color);
+    font-size: 18px;
+}
+
+.input-sections input {
+    box-sizing: border-box;
+    height: 36px;
+    /* width: 30em; */
+    border: 1px solid var(--dashboard-nav-back-color);
+    border-radius: 4px;
+    background-color: var(--dashboard-nav-back-color);
+    outline: none;
+    padding: 15px;
+}
+
+.section-1,
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 20px;
 }
 
 .close-modal {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 7px;
+    top: -20px;
+    right: -20px;
+    height: 48px;
+    border-radius: 50%;
+    width: 48px;
+    cursor: pointer;
+    background-color: var(--font-blue-color);
+}
+
+.submit-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 33px;
+    width: 98%;
+}
+
+.resetBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
