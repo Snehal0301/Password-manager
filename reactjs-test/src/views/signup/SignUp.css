@@ -28,10 +28,37 @@
     margin: 0 25px 99px 28px;
 }
 
+.signUpLogo-mobile{
+    display: none;
+}
+
 /* ------------signUpContent----------------- */
 
 .signUpContent {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+/* ----------------Media query----------------- */
+@media screen and (max-width:900px) {
+    .login {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .signUpLogo {
+        justify-content: normal;
+        flex-basis: 0;
+    }
+
+    .signUpLogo-header {
+        display: none;
+    }
+
+    .signUpLogo-mobile {
+        display: block;
+    }
+
+
 }

@@ -1,4 +1,3 @@
-import React from 'react'
 import Button from '../button/Button'
 import { useState } from 'react';
 import '../modal/Modal.css'
@@ -14,7 +13,6 @@ const Modal = (props: any) => {
   const handleInputs = (e: any) => {
     name = e.target.name;
     value = e.target.value;
-
     setUser({ ...user, [name]: value })
   }
 
@@ -79,7 +77,6 @@ const Modal = (props: any) => {
                 <label htmlFor="textarea">Notes</label>
                 <textarea id="textarea" value={user.notes} name="notes" onChange={handleInputs} required />
               </div>
-
               {
                 props.type === 'add' ?
                   <div className="submit-buttons">
@@ -90,9 +87,6 @@ const Modal = (props: any) => {
                   </div>
                   : ""
               }
-
-
-
             </form>
             <img src={require('../../assets/images/close_btn.png')} onClick={() => props.setTrigger(false)} className="close-modal" alt="" />
           </div>
@@ -100,7 +94,6 @@ const Modal = (props: any) => {
       </>
       :
       <>
-
       </>
     </>
   )

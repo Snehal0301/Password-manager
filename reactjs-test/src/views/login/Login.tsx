@@ -1,11 +1,32 @@
 import Form from '../../components/form/Form'
 import './Login.css'
 import Toast from '../../components/toast/Toast'
+import { useEffect, useState } from 'react'
 const Login = () => {
+
+    const [displayToast, setDisplayToast] = useState(false);
+
+    useEffect(() => {
+        setDisplayToast(Boolean(sessionStorage.getItem('signUpSuccess')));
+        // sessionStorage.removeItem('signUpSuccess');
+    }, []);
+
+    setInterval(() => {
+        setDisplayToast(false);
+    }, 2000);
+
     return (
 
         <>
-            {/* <Toast /> */}
+            {
+                displayToast ?
+                    (
+                        <Toast />
+                    ) :
+                    (
+                        ''
+                    )
+            }
             <div className='login'>
                 <div className="signInLogo">
                     <div className="signinLogo-header">
@@ -15,10 +36,6 @@ const Login = () => {
                     </div>
                     <div className="signInLogo-mobile">
                         <img src={require("../../assets/images/mobile_logo.png")} alt="" className='mobile_logo' />
-                    </div>
-                    <div className="all-tabs">
-                        <div className='tabs'>SIGN IN</div>
-                        <div className='tabs'>SIGN UP</div>
                     </div>
                 </div>
                 <div className="signInContent">

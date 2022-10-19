@@ -6,7 +6,7 @@ import { useState } from 'react'
 import Modal from '../../components/modal/Modal'
 
 const DashBoard = () => {
-    const data = [
+    const data:any = [
         {
             url: 'www.facebook.com',
             site: 'Facebook',
@@ -21,9 +21,6 @@ const DashBoard = () => {
         },
 
     ]
-
-    // let data: any;
-    // data = JSON.parse(localStorage.getItem("formdata")|| "[]")
 
     const [modal, setModal] = useState(false);
 
@@ -55,28 +52,30 @@ const DashBoard = () => {
                             <img src={require('../../assets/images/Path Copy.png')} alt="path copy" />
                         </div>
                     </div>
-                    {/* IMPORTANT DONT DELETE */}
-                    {/* <div className="container-content">
-                        <div className="container-add-files">
-                            <div className="addfile">
-                                <p>Please Click on the “+” symbol
-                                    to add sites</p>
+                    {
+                        data.length === 0 ?
+                            <div className="container-content">
+                                <div className="container-add-files">
+                                    <div className="addfile">
+                                        <p>Please Click on the “+” symbol
+                                            to add sites</p>
+                                    </div>
+                                </div>
+                            </div> 
+                            :
+                            <div className="site-elements">
+                                {
+                                    data.map((element:any) => {
+                                        return (
+                                            <Card element={element} />
+                                        )
+                                    })
+                                }
                             </div>
-                        </div>
-                    </div> */}
-                    <div className="site-elements">
-                        {
-                            data.map((element) => {
-                                return (
-                                    <Card element={element} />
-                                )
-                            })
-                        }
-                    </div>
-
+                    }
                     {
                         modal &&
-                        <Modal trigger={modal} setTrigger={setModal} type="add"/>
+                        <Modal trigger={modal} setTrigger={setModal} type="add" />
                     }
                 </div>
             </div>
